@@ -36,5 +36,19 @@ namespace LibraryManagementSystem
         {
             Application.Exit();
         }
+
+        private void login_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignup_Click(object sender, EventArgs e)
+        {
+            // Open the signup form
+            Auth Auth=new Auth();
+            Auth.Show();
+            this.Hide();
+
+        }
     }
 }

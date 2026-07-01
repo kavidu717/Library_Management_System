@@ -44,8 +44,15 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             label1 = new Label();
+            panel2 = new Panel();
+            pictureBox2 = new PictureBox();
+            panel3 = new Panel();
+            label6 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
+            panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            panel3.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -65,15 +72,15 @@
             panel1.Controls.Add(label2);
             panel1.Controls.Add(pictureBox1);
             panel1.Controls.Add(label1);
-            panel1.Location = new Point(23, 29);
+            panel1.Location = new Point(536, 28);
             panel1.Name = "panel1";
-            panel1.Size = new Size(539, 722);
+            panel1.Size = new Size(475, 722);
             panel1.TabIndex = 0;
             // 
             // btnclear
             // 
             btnclear.BackgroundImage = (Image)resources.GetObject("btnclear.BackgroundImage");
-            btnclear.Location = new Point(433, 502);
+            btnclear.Location = new Point(413, 502);
             btnclear.Name = "btnclear";
             btnclear.Size = new Size(34, 37);
             btnclear.TabIndex = 13;
@@ -83,7 +90,7 @@
             // btnNovi2
             // 
             btnNovi2.BackgroundImage = (Image)resources.GetObject("btnNovi2.BackgroundImage");
-            btnNovi2.Location = new Point(437, 465);
+            btnNovi2.Location = new Point(420, 465);
             btnNovi2.Name = "btnNovi2";
             btnNovi2.Size = new Size(29, 33);
             btnNovi2.TabIndex = 12;
@@ -93,7 +100,7 @@
             // btnNovi
             // 
             btnNovi.BackgroundImage = (Image)resources.GetObject("btnNovi.BackgroundImage");
-            btnNovi.Location = new Point(401, 465);
+            btnNovi.Location = new Point(383, 465);
             btnNovi.Name = "btnNovi";
             btnNovi.Size = new Size(29, 33);
             btnNovi.TabIndex = 11;
@@ -116,7 +123,7 @@
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit.Location = new Point(347, 540);
+            btnExit.Location = new Point(331, 540);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(110, 37);
             btnExit.TabIndex = 9;
@@ -130,12 +137,13 @@
             btnSignup.FlatAppearance.BorderSize = 0;
             btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSignup.Location = new Point(206, 540);
+            btnSignup.Location = new Point(190, 540);
             btnSignup.Name = "btnSignup";
             btnSignup.Size = new Size(110, 37);
             btnSignup.TabIndex = 8;
             btnSignup.Text = "Sign Up";
             btnSignup.UseVisualStyleBackColor = false;
+            btnSignup.Click += btnSignup_Click;
             // 
             // btnLogin
             // 
@@ -143,7 +151,7 @@
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogin.Location = new Point(65, 540);
+            btnLogin.Location = new Point(45, 540);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(110, 37);
             btnLogin.TabIndex = 7;
@@ -154,7 +162,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label4.Location = new Point(61, 438);
+            label4.Location = new Point(46, 438);
             label4.Name = "label4";
             label4.Size = new Size(70, 20);
             label4.TabIndex = 6;
@@ -164,7 +172,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label3.Location = new Point(62, 366);
+            label3.Location = new Point(43, 366);
             label3.Name = "label3";
             label3.Size = new Size(82, 20);
             label3.TabIndex = 5;
@@ -172,7 +180,7 @@
             // 
             // Password
             // 
-            Password.Location = new Point(62, 461);
+            Password.Location = new Point(42, 461);
             Password.Multiline = true;
             Password.Name = "Password";
             Password.PasswordChar = '*';
@@ -181,7 +189,7 @@
             // 
             // UserName
             // 
-            UserName.Location = new Point(62, 392);
+            UserName.Location = new Point(44, 392);
             UserName.Multiline = true;
             UserName.Name = "UserName";
             UserName.Size = new Size(402, 37);
@@ -218,20 +226,65 @@
             label1.TabIndex = 0;
             label1.Text = "Login";
             // 
+            // panel2
+            // 
+            panel2.BackColor = Color.FromArgb(71, 183, 165);
+            panel2.Controls.Add(pictureBox2);
+            panel2.Controls.Add(panel3);
+            panel2.Location = new Point(26, 28);
+            panel2.Name = "panel2";
+            panel2.Size = new Size(475, 722);
+            panel2.TabIndex = 1;
+            // 
+            // pictureBox2
+            // 
+            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
+            pictureBox2.Location = new Point(18, 152);
+            pictureBox2.Name = "pictureBox2";
+            pictureBox2.Size = new Size(435, 551);
+            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox2.TabIndex = 1;
+            pictureBox2.TabStop = false;
+            // 
+            // panel3
+            // 
+            panel3.BackColor = Color.FromArgb(199, 239, 207);
+            panel3.Controls.Add(label6);
+            panel3.Location = new Point(18, 33);
+            panel3.Name = "panel3";
+            panel3.Size = new Size(435, 100);
+            panel3.TabIndex = 0;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(40, 30);
+            label6.Name = "label6";
+            label6.Size = new Size(346, 25);
+            label6.TabIndex = 0;
+            label6.Text = "Gatewat To Knowledage And Wisdom";
+            // 
             // login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(199, 239, 207);
-            ClientSize = new Size(588, 780);
+            ClientSize = new Size(1031, 780);
+            Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "login";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
+            Load += login_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
+            panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            panel3.ResumeLayout(false);
+            panel3.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -252,5 +305,9 @@
         private Button btnNovi;
         private Button btnNovi2;
         private Button btnclear;
+        private Panel panel2;
+        private Panel panel3;
+        private Label label6;
+        private PictureBox pictureBox2;
     }
 }
