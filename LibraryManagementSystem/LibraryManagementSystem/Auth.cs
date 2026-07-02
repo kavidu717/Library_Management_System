@@ -43,7 +43,7 @@ namespace LibraryManagementSystem
         private void btnSubmit_Click(object sender, EventArgs e)
         {
             // submit button
-            if (UserName.Text =="Auth" && Password.Text=="auth123")
+            if (UserName.Text == "Auth" && Password.Text == "auth123")
             {
                 Signup Signup = new Signup();
                 Signup.Show();
@@ -72,6 +72,13 @@ namespace LibraryManagementSystem
             UserName.Clear();
             Password.Clear();
             UserName.Focus();
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            login back= new login();
+            back.Show();
         }
     }
 }

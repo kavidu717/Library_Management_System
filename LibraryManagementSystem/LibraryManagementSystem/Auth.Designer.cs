@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Auth));
             panel1 = new Panel();
+            btnBack = new Button();
             btnCncel = new Button();
             btnSubmit = new Button();
             btnclear = new Button();
@@ -47,6 +48,7 @@
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(71, 183, 165);
+            panel1.Controls.Add(btnBack);
             panel1.Controls.Add(btnCncel);
             panel1.Controls.Add(btnSubmit);
             panel1.Controls.Add(btnclear);
@@ -61,6 +63,18 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(452, 604);
             panel1.TabIndex = 0;
+            // 
+            // btnBack
+            // 
+            btnBack.FlatAppearance.BorderSize = 0;
+            btnBack.FlatStyle = FlatStyle.Flat;
+            btnBack.Image = (Image)resources.GetObject("btnBack.Image");
+            btnBack.Location = new Point(18, 20);
+            btnBack.Name = "btnBack";
+            btnBack.Size = new Size(45, 44);
+            btnBack.TabIndex = 23;
+            btnBack.UseVisualStyleBackColor = true;
+            btnBack.Click += btnBack_Click;
             // 
             // btnCncel
             // 
@@ -198,5 +212,6 @@
         private TextBox UserName;
         private Button btnCncel;
         private Button btnSubmit;
+        private Button btnBack;
     }
 }
