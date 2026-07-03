@@ -90,7 +90,7 @@
             // btnNovi2
             // 
             btnNovi2.BackgroundImage = (Image)resources.GetObject("btnNovi2.BackgroundImage");
-            btnNovi2.Location = new Point(420, 465);
+            btnNovi2.Location = new Point(416, 465);
             btnNovi2.Name = "btnNovi2";
             btnNovi2.Size = new Size(29, 33);
             btnNovi2.TabIndex = 12;
@@ -147,7 +147,7 @@
             // 
             // btnLogin
             // 
-            btnLogin.BackColor = Color.FromArgb(50, 128, 223);
+            btnLogin.BackColor = Color.FromArgb(61, 39, 230);
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
@@ -157,6 +157,7 @@
             btnLogin.TabIndex = 7;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
             // label4
             // 
@@ -180,7 +181,7 @@
             // 
             // Password
             // 
-            Password.Location = new Point(42, 461);
+            Password.Location = new Point(44, 461);
             Password.Multiline = true;
             Password.Name = "Password";
             Password.PasswordChar = '*';
