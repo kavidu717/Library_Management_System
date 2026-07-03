@@ -47,7 +47,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(71, 183, 165);
+            panel1.BackColor = Color.FromArgb(39, 210, 230);
             panel1.Controls.Add(btnBack);
             panel1.Controls.Add(btnCncel);
             panel1.Controls.Add(btnSubmit);
@@ -59,9 +59,9 @@
             panel1.Controls.Add(Password);
             panel1.Controls.Add(UserName);
             panel1.Controls.Add(pictureBox1);
-            panel1.Location = new Point(12, 22);
+            panel1.Location = new Point(24, 24);
             panel1.Name = "panel1";
-            panel1.Size = new Size(452, 604);
+            panel1.Size = new Size(390, 579);
             panel1.TabIndex = 0;
             // 
             // btnBack
@@ -78,11 +78,11 @@
             // 
             // btnCncel
             // 
-            btnCncel.BackColor = Color.FromArgb(50, 128, 223);
+            btnCncel.BackColor = Color.FromArgb(230, 39, 39);
             btnCncel.FlatAppearance.BorderSize = 0;
             btnCncel.FlatStyle = FlatStyle.Flat;
             btnCncel.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnCncel.Location = new Point(65, 452);
+            btnCncel.Location = new Point(25, 456);
             btnCncel.Name = "btnCncel";
             btnCncel.Size = new Size(315, 37);
             btnCncel.TabIndex = 22;
@@ -96,7 +96,7 @@
             btnSubmit.FlatAppearance.BorderSize = 0;
             btnSubmit.FlatStyle = FlatStyle.Flat;
             btnSubmit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSubmit.Location = new Point(65, 387);
+            btnSubmit.Location = new Point(27, 391);
             btnSubmit.Name = "btnSubmit";
             btnSubmit.Size = new Size(315, 37);
             btnSubmit.TabIndex = 21;
@@ -107,7 +107,7 @@
             // btnclear
             // 
             btnclear.BackgroundImage = (Image)resources.GetObject("btnclear.BackgroundImage");
-            btnclear.Location = new Point(392, 346);
+            btnclear.Location = new Point(327, 346);
             btnclear.Name = "btnclear";
             btnclear.Size = new Size(34, 37);
             btnclear.TabIndex = 20;
@@ -117,7 +117,7 @@
             // btnNovi2
             // 
             btnNovi2.BackgroundImage = (Image)resources.GetObject("btnNovi2.BackgroundImage");
-            btnNovi2.Location = new Point(394, 307);
+            btnNovi2.Location = new Point(305, 307);
             btnNovi2.Name = "btnNovi2";
             btnNovi2.Size = new Size(29, 33);
             btnNovi2.TabIndex = 19;
@@ -127,7 +127,7 @@
             // btnNovi
             // 
             btnNovi.BackgroundImage = (Image)resources.GetObject("btnNovi.BackgroundImage");
-            btnNovi.Location = new Point(362, 307);
+            btnNovi.Location = new Point(334, 308);
             btnNovi.Name = "btnNovi";
             btnNovi.Size = new Size(29, 33);
             btnNovi.TabIndex = 18;
@@ -160,15 +160,15 @@
             Password.Multiline = true;
             Password.Name = "Password";
             Password.PasswordChar = '*';
-            Password.Size = new Size(402, 37);
+            Password.Size = new Size(344, 37);
             Password.TabIndex = 15;
             // 
             // UserName
             // 
-            UserName.Location = new Point(25, 234);
+            UserName.Location = new Point(22, 234);
             UserName.Multiline = true;
             UserName.Name = "UserName";
-            UserName.Size = new Size(402, 37);
+            UserName.Size = new Size(345, 37);
             UserName.TabIndex = 14;
             // 
             // pictureBox1
@@ -185,8 +185,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(199, 239, 207);
-            ClientSize = new Size(482, 660);
+            BackColor = Color.FromArgb(77, 230, 39);
+            ClientSize = new Size(444, 626);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Auth";

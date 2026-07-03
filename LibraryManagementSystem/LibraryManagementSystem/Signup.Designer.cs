@@ -52,7 +52,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(71, 183, 165);
+            panel1.BackColor = Color.FromArgb(39, 210, 230);
             panel1.Controls.Add(btnclear);
             panel1.Controls.Add(btnNovi);
             panel1.Controls.Add(btnNovi2);
@@ -240,7 +240,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(132, 4);
+            pictureBox1.Location = new Point(135, 7);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(94, 94);
             pictureBox1.SizeMode = PictureBoxSizeMode.AutoSize;
@@ -251,7 +251,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(199, 239, 207);
+            BackColor = Color.FromArgb(77, 230, 39);
             ClientSize = new Size(444, 626);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;

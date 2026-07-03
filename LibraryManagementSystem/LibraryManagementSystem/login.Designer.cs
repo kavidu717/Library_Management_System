@@ -57,7 +57,7 @@
             // 
             // panel1
             // 
-            panel1.BackColor = Color.FromArgb(71, 183, 165);
+            panel1.BackColor = Color.FromArgb(39, 210, 230);
             panel1.Controls.Add(btnclear);
             panel1.Controls.Add(btnNovi2);
             panel1.Controls.Add(btnNovi);
@@ -111,7 +111,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label5.Location = new Point(128, 673);
+            label5.Location = new Point(109, 666);
             label5.Name = "label5";
             label5.Size = new Size(275, 30);
             label5.TabIndex = 10;
@@ -119,11 +119,11 @@
             // 
             // btnExit
             // 
-            btnExit.BackColor = Color.FromArgb(50, 128, 223);
+            btnExit.BackColor = Color.FromArgb(230, 39, 39);
             btnExit.FlatAppearance.BorderSize = 0;
             btnExit.FlatStyle = FlatStyle.Flat;
             btnExit.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnExit.Location = new Point(331, 540);
+            btnExit.Location = new Point(331, 546);
             btnExit.Name = "btnExit";
             btnExit.Size = new Size(110, 37);
             btnExit.TabIndex = 9;
@@ -137,7 +137,7 @@
             btnSignup.FlatAppearance.BorderSize = 0;
             btnSignup.FlatStyle = FlatStyle.Flat;
             btnSignup.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnSignup.Location = new Point(190, 540);
+            btnSignup.Location = new Point(190, 547);
             btnSignup.Name = "btnSignup";
             btnSignup.Size = new Size(110, 37);
             btnSignup.TabIndex = 8;
@@ -151,7 +151,7 @@
             btnLogin.FlatAppearance.BorderSize = 0;
             btnLogin.FlatStyle = FlatStyle.Flat;
             btnLogin.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            btnLogin.Location = new Point(45, 540);
+            btnLogin.Location = new Point(45, 546);
             btnLogin.Name = "btnLogin";
             btnLogin.Size = new Size(110, 37);
             btnLogin.TabIndex = 7;
@@ -208,7 +208,7 @@
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(164, 100);
+            pictureBox1.Location = new Point(166, 106);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(165, 163);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -218,17 +218,17 @@
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI Emoji", 36F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.DarkSlateGray;
-            label1.Location = new Point(171, 33);
+            label1.Font = new Font("Segoe UI Emoji", 48F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label1.ForeColor = Color.Black;
+            label1.Location = new Point(154, 20);
             label1.Name = "label1";
-            label1.Size = new Size(150, 64);
+            label1.Size = new Size(197, 85);
             label1.TabIndex = 0;
             label1.Text = "Login";
             // 
             // panel2
             // 
-            panel2.BackColor = Color.FromArgb(71, 183, 165);
+            panel2.BackColor = Color.FromArgb(39, 210, 230);
             panel2.Controls.Add(pictureBox2);
             panel2.Controls.Add(panel3);
             panel2.Location = new Point(26, 28);
@@ -248,7 +248,7 @@
             // 
             // panel3
             // 
-            panel3.BackColor = Color.FromArgb(199, 239, 207);
+            panel3.BackColor = Color.FromArgb(77, 230, 39);
             panel3.Controls.Add(label6);
             panel3.Location = new Point(18, 33);
             panel3.Name = "panel3";
@@ -258,10 +258,10 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI", 14.25F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(40, 30);
+            label6.Font = new Font("Segoe UI", 15.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            label6.Location = new Point(25, 35);
             label6.Name = "label6";
-            label6.Size = new Size(346, 25);
+            label6.Size = new Size(385, 30);
             label6.TabIndex = 0;
             label6.Text = "Gatewat To Knowledage And Wisdom";
             // 
@@ -269,8 +269,8 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackColor = Color.FromArgb(199, 239, 207);
-            ClientSize = new Size(1031, 780);
+            BackColor = Color.FromArgb(77, 230, 39);
+            ClientSize = new Size(1034, 780);
             Controls.Add(panel2);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
